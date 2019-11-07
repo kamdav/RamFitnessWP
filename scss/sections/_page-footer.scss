@@ -1,0 +1,82 @@
+//
+// Page footer
+//
+
+.page-footer {
+    margin-top: 50px;
+    color: darken($white, 20%);
+    background: lighten(#2b2b2b, 10%);
+    padding: 20px 0;
+
+    border-top: 3px solid $primary-color;
+}
+
+.footer-social {
+    float: left;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+
+    li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 0;
+        margin: 0 5px;
+
+        i {
+            color: $primary-color;
+            font-size: 50px;
+
+            &:hover {
+                color: #fff;
+                transition-duration: 1s;
+
+            }
+        }
+
+    }
+
+    @media #{$small-only} { 
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    @media #{$medium-only} { 
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+.footer-logo {
+    padding: 10px 0;
+
+    @media #{$large-up} {
+        float: right;
+    }
+
+    img {
+        width: 240px;
+        height: auto;
+    }
+}
+
+.copyright {
+    font-size: 14px;
+
+    @media #{$small-only}, #{$medium-only} {
+        text-align: center;
+    }
+}
+
+.by-takomo p {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 9px;
+    opacity: 0.4;
+
+    a {
+        color: $white;
+    }
+}

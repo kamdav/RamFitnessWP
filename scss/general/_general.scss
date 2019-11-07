@@ -1,0 +1,284 @@
+//
+// General styles
+//
+
+@mixin item-transition($duration) {
+    -webkit-transition: ease-out $duration;
+    -moz-transition: ease-out $duration;
+    -o-transition: ease-out $duration;
+    transition: ease-out $duration;
+}
+
+.clearing-thumbs img {
+    width: 215px;
+    height: 215px;
+    padding: 10px;
+}
+
+
+.white {
+    background: $white;
+}
+
+.text-white {
+    color: $white;
+}
+
+.trans-white {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.minus-top {
+    margin-top: -40px;
+}
+
+.outer-spacing {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.inner-spacing {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.space-top {
+    margin-top: 20px;
+}
+
+.space-top-large {
+    margin-top: 30px;
+}
+
+.space-bot {
+    margin-bottom: 20px;
+}
+
+.space-bot-footer-filler {
+    @media #{$medium-up} {
+        margin-bottom: 280px;
+    }
+}
+
+.space-bot-footer-filler-smaller {
+    @media #{$medium-up} {
+        margin-bottom: 200px;
+    }
+}
+
+
+
+.front-of-house {
+    z-index: 99;
+}
+
+.back-of-house {
+    z-index: -99;
+}
+
+.info-box {
+    h1, h2, h3, h4, h5, h6 {
+        color: $primary-color;
+    }
+    p {
+        line-height: 2;
+    }
+    a {
+        font-weight: bold;
+    }
+}
+
+.gray-bg {
+    margin: 0 0 15px 0;
+    background: #e2e0e0;
+    opacity: 0.9;
+}
+
+.red-bg {
+    background: darken($primary-color, 5%);
+}
+
+.img-border {
+    border-radius: 200px;
+}
+
+.img-spacing {
+    margin: 5px;
+}
+
+.img-spacing-2 {
+    margin-bottom: 20px;
+
+    @media #{$medium-up} {
+        margin-top: 30px;
+    }
+}
+
+
+// Typography
+
+.ram-title {
+    z-index: -999;
+    opacity: 0.1;
+
+    @media #{$small-only} {
+        margin-top: -3px;
+    }
+}
+
+.b-title {
+    display: inline-block;
+    margin: 5px 0 25px 0;
+    color: $primary-color;
+    text-transform: uppercase;
+
+    &:after {
+        content: '';
+        display: block;
+        margin: 0 auto;
+        border-bottom: 3px solid $primary-color;
+        width: 50%;
+        height: 8px;
+    }
+}
+
+.c-title {
+    display: inline-block;
+    margin: 0px 0 20px 0;
+    padding-top: 10px;
+    color: $primary-color;
+    text-transform: uppercase;
+
+    &:after {
+        content: '';
+        display: block;
+        margin: 0 auto;
+        border-bottom: 3px solid $primary-color;
+        width: 50%;
+        height: 8px;
+    }
+}
+
+.m-title {
+    color: $primary-color;
+    text-transform: uppercase;
+}
+
+
+// random
+
+.testimonials {
+    margin-top: 50px;
+}
+
+.stroked-hr {
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: $primary-color;
+}
+
+// image related
+
+.page-img {
+    margin: 5px;
+    border: 5px solid white;
+
+    -webkit-box-shadow: 3px 3px 25px darken($primary-color, 30%);
+    -moz-box-shadow: 3px 3px 25px darken($primary-color, 30%);
+    box-shadow: 3px 3px 25px darken($primary-color, 30%);
+
+    @media #{$medium-only} {
+        margin-top: 35px;
+    }
+}
+
+.border-and-shadow {
+    margin-bottom: 5px;
+    border: 5px solid white;
+
+    -webkit-box-shadow: 3px 3px 25px darken($primary-color, 30%);
+    -moz-box-shadow: 3px 3px 25px darken($primary-color, 30%);
+    box-shadow: 3px 3px 25px darken($primary-color, 30%);
+}
+
+.about-img {
+    width: 80%;
+    height: auto;
+}
+
+.image-group {
+    img {
+        max-height: 200px;
+    }
+}
+
+.image-group div img {
+    @media #{$small-only} {
+        padding-top: 10px;
+    }
+}
+
+
+// testimonials page styling
+
+.testimonial-text {
+    margin-bottom: 0px;
+    padding: 10px 10px 0 10px;
+
+    border-left: 2px solid $primary-color;
+    border-top: 2px solid $primary-color;
+
+    font-size: 13px;
+}
+
+.testimonial-name {
+    display: inline;
+    color: $primary-color;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.testimonial-box {
+    margin-bottom: 20px;
+}
+
+
+// prices page styling
+
+.bullet-item {
+    span {
+        font-weight: 600;
+        color: $primary-color;
+    }
+}
+
+// youtube
+.youtube {
+    width: 80%;
+}
+
+
+// CENTER ALIGN THUMBNAILS
+[class*="clearing-thumbs"]
+{
+    margin:  0 0 0 0;
+    text-align: center;
+    padding: 0.25 0 0.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+  [class*="clearing-thumbs"] > li
+{
+     padding: 0.025 0 0.5rem 0;
+}
+
+// Dropdown fixing 
+.space-filler {
+    margin-top: 350px;
+}
+
+.space-filler-small {
+    margin-top: 100px;
+}
